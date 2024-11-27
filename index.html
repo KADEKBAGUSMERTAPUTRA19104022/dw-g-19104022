@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Produk</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .product-card .price {
+            font-size: 16px;
+            color: #4CAF50;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-card .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .product-card .button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parfum Eksklusif</h1>
+    <p>Temukan parfum terbaik kami di sini!</p>
+</header>
+
+<nav>
+    <a href="#home">Beranda</a>
+    <a href="#products">Produk</a>
+    <a href="#contact">Kontak</a>
+</nav>
+
+<div class="container">
+    <h2>Produk Terbaru</h2>
+    <div class="products">
+        <!-- Kartu Produk -->
+        <div class="product-card">
+            <img src="./parfum/parfum1.jpg" alt="Produk 1">
+            <h3>Aigner Blue</h3>
+            <p>Perpaduan aroma jeruk, bergamot, lemon, dan violet leaf. Selain itu, parfum ini juga memberikan aroma melati dan cardamon.</p>
+            <div class="price">Rp 440.000</div>
+            <a href="#" class="button">Beli Sekarang</a>
+        </div>
+
+        <div class="product-card">
+            <img src="./parfum/parfum2.jpg" alt="Produk 2">
+            <h3>Bvlgari Extreme</h3>
+            <p>Menggunakan kombinasi aroma calabrian bergamot dan pink grapefruit. Kemudian parfum ini juga mendapatkan aroma woody yang terasa lembut.  </p>
+            <div class="price">Rp 1.798.000</div>
+            <a href="#" class="button">Beli Sekarang</a>
+        </div>
+
+        <div class="product-card">
+            <img src="./parfum/parfum3.jpg" alt="Produk 3">
+            <h3>Paco Rabanne XS</h3>
+            <p>Menampilkan aroma vanila, apel, cinnamon, dan ginger yang cukup kental. Aroma yang cukup maskulin, tapi tetap terasa halus dan tidak terlalu menyengat.            </p>
+            <div class="price">Rp 1.528.199</div>
+            <a href="#" class="button">Beli Sekarang</a>
+        </div>
+
+        <div class="product-card">
+            <img src="./parfum/parfum4.jpg" alt="Produk 4">
+            <h3>Acqua Di Gio</h3>
+            <p>Memadukan wangi jeruk, lemon, dan bergamot yang cukup kuat. Parfum ini juga menampilkan wangi pala, musk, cedar, dan rosemary yang halus.            </p>
+            <div class="price">Rp 449.398</div>
+            <a href="#" class="button">Beli Sekarang</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Produk Kami. Semua hak dilindungi.</p>
+</footer>
+
+</body>
+</html>
